@@ -1,4 +1,4 @@
-***Papers To Read
+### Papers To Read
 
 1. BREAKING THE SOFTMAX BOTTLENECK: A HIGH-RANK RNN LANGUAGE MODEL
 2. Visual Curiosity: Learning to Ask Questions to Learn Visual Recognition
@@ -10,7 +10,7 @@
 8. Semantic Parsing for Task Oriented Dialog using Hierarchical Representations
 
 
-***Projects Roadmap
+### Projects Roadmap
 
 1. Visdial Research 
 	> RNN in Pytorch
@@ -34,11 +34,13 @@
 	> Reading the Google open images []
 	> Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels (Tags Riken Noisy Fashion)
 	> Masking: A New Perspective of Noisy Supervision (Tags Riken Noisy Fashion)
-	> 
+	>
+
+4. Autograd & Computational Graph 
 
 
 
-** Mostly Cuda  Learning** 
+### Mostly Cuda  Learning
 
 0. Efficient Large-scale Approximate Nearest Neighbor Search on OpenCL FPGA
 1. Billion-scale similarity search with GPUs FAIR (Tags CUDA FAISS LOPQ Image Search)
@@ -50,11 +52,12 @@
 
 
 
-** RL Resources**
+## RL Resources
 
 1. https://spinningup.openai.com/en/latest/spinningup/keypapers.html
 
 
-***Papers to Implement
+## *Papers to Implement
+
 1. Poincaré Embeddings for Learning Hierarchical Representations
 2. A DISCIPLINED APPROACH TO NEURAL NETWORK HYPER-PARAMETERS: PART 1 – LEARNING RATE, BATCH SIZE, MOMENTUM, AND WEIGHT DECAY
