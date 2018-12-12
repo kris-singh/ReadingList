@@ -8,6 +8,7 @@
 6. Do explanations make VQA models more predictable to a human?
 7. How agents see things: On visual representations in an emergent language game
 8. Semantic Parsing for Task Oriented Dialog using Hierarchical Representations
+9. [https://openreview.net/pdf?id=ryQu7f-RZ] AmsGrad
 
 
 ### Projects Roadmap
@@ -61,3 +62,13 @@
 
 1. Poincaré Embeddings for Learning Hierarchical Representations
 2. A DISCIPLINED APPROACH TO NEURAL NETWORK HYPER-PARAMETERS: PART 1 – LEARNING RATE, BATCH SIZE, MOMENTUM, AND WEIGHT DECAY
+
+
+
+
+## Blogs to Read
+1. Hovrod
+2. [https://towardsdatascience.com/how-to-build-a-gated-convolutional-neural-network-gcnn-for-natural-language-processing-nlp-5ba3ee730bfb] Gated Conv Neural Network
+3. [https://www.fast.ai/2018/07/02/adam-weight-decay/] Super Convergence
+4. [http://www.phontron.com/class/nn4nlp2017/schedule.html] NLP course
+5. [https://stats.stackexchange.com/questions/281240/why-is-the-cost-function-of-neural-networks-non-convex] Why loss function is convex still the loss i s surface is not convex
