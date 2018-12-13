@@ -62,6 +62,7 @@
 
 1. Poincaré Embeddings for Learning Hierarchical Representations
 2. A DISCIPLINED APPROACH TO NEURAL NETWORK HYPER-PARAMETERS: PART 1 – LEARNING RATE, BATCH SIZE, MOMENTUM, AND WEIGHT DECAY
+3. https://github.com/rusty1s/pytorch_geometric.git
 
 
 
