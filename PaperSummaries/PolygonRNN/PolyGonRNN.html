@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-01-24 Thu 20:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Singh" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org80c2049">1. Paper Title: Annotation OBject INstances with a Polygon RNN</a></li>
+<li><a href="#org4657fac">2. Author: Casterjon et al</a></li>
+<li><a href="#orgd30d393">3. Details:</a>
+<ul>
+<li>
+<ul>
+<li><a href="#orgbada60b">3.0.1. Motivation:</a></li>
+<li><a href="#org4414a3d">3.0.2. Previous Work:</a></li>
+<li><a href="#orga1e8343">3.0.3. Methodology:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org80c2049" class="outline-2">
+<h2 id="org80c2049"><span class="section-number-2">1</span> Paper Title: Annotation OBject INstances with a Polygon RNN</h2>
+</div>
+<div id="outline-container-org4657fac" class="outline-2">
+<h2 id="org4657fac"><span class="section-number-2">2</span> Author: Casterjon et al</h2>
+</div>
+<div id="outline-container-orgd30d393" class="outline-2">
+<h2 id="orgd30d393"><span class="section-number-2">3</span> Details:</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgbada60b" class="outline-4">
+<h4 id="orgbada60b"><span class="section-number-4">3.0.1</span> Motivation:</h4>
+<div class="outline-text-4" id="text-3-0-1">
+<p>
+The paper discusses a new method in terms of object / instance segementation. It argues that
+at present the object segmentation techniques in use are data hungry and annotation cost for labelling
+all the pixels in an image is too expensive and error prone. To alleviate this problem the paper proposes
+the use of a segmentation method where the annotator would not have to label each and every pixel in the image.
+Instead the annotator can only draw a polygon around the object. Also the given method then can be used as a 
+quick tool for annotation of images.
+</p>
+</div>
+</div>
+<div id="outline-container-org4414a3d" class="outline-4">
+<h4 id="org4414a3d"><span class="section-number-4">3.0.2</span> Previous Work:</h4>
+<div class="outline-text-4" id="text-3-0-2">
+<p>
+Most of the previous work that try to reduce the cost of annotation have focused on using techquies of the 
+form of weak supervision where, weak annotaions like bounding box or image tags used for instance segmentation
+task. Other works have used unsupervied/ weakly supervised method such as GrabCut for getting the segmentations.
+<i>* I did not understand the term scribbles here*</i>. Other than this there are no other previous work which grabed
+my attention.
+</p>
+</div>
+</div>
+<div id="outline-container-orga1e8343" class="outline-4">
+<h4 id="orga1e8343"><span class="section-number-4">3.0.3</span> Methodology:</h4>
+<div class="outline-text-4" id="text-3-0-3">
+<p>
+ Given an image and bounding box crop of the image, Polygon RNN predicts a polygon around the object in the given
+ crop. More formally it credicts \[(c_t)_t\in\mathcal{N} c \in \matcal{R}^2 \]. A important point here is that
+ for objects the polygon are generally closed, which is good since we need only predict the starting point. A 
+ closed polygon can does not have unique parameterisation. Suppose you have square parameterised as \[[(x1, y1), l]\]
+ where \[x_1,y_1\] is the starting point and l is the length of side, another way of parameterising the same square 
+ could be \[[[x_2, y_2], l]\] where \[x_2, y_2\] is any other vertex on the square. This complicates a matter a little
+ bit interms of learning since we can have multiple correct solutions. 
+ <i>* Comment: Can't we just fix any of the verticies from the bounding box point as the starting point. A crude estimation but a simple way. How much does the starting point
+ selection make changes in the prediction*</i>
+ Here is the full architecture:
+<img src="./model.png" alt="model.png" /> 
+</p>
+
+<p>
+Polygon RNN architecture can be divided in two parts,
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org2903dcb"></a>CNN: The CNN part is used for feature learning of the given image. Here we can simply use the last layer for<br />
+<div class="outline-text-6" id="text-3-0-3-0-1">
+<p>
+feature learning since, the last layer only encodes the semanctic/global information about the image. For predicting
+the verticies of the polygon would require access to more basic features such as edges of the images, while also requiring
+the highler layer features. The higher layers features encode other important feature like which object, shape etc. The paper 
+achives this by using skip connections which have been made popular by the resnets. The polygon RNN uses a modified vgg net 
+with cutting of the final maxpool and fc layer. The output of the network is downsamples the input by a factor of 16./* This is significant, since we are essentially <b>/
+/</b> intrested finding verticies that span very short number of pixel in the original image.*/.
+</p>
+
+<p>
+The features from pool2(56, 128), pool3(28, 256), conv4<sub>3</sub>(28, 512), and conv5<sub>3</sub>(14, 512) are concatenated together to form a image a feature vector of size 28*512. 
+Which is passed through another convolutional network. <i>* Not sure how the concatenation takes place*</i> 
+</p>
+</div>
+</li>
+<li><a id="orgb347f42"></a>RNN: The paper uses a Conv-LSTM network for prediction of the verticies. A conv LSTM is a just like an regular LSTM with multiplication replaced by convolution. In<br />
+<div class="outline-text-6" id="text-3-0-3-0-2">
+<p>
+particular, 
+</p>
+       \begin{equation}
+  \begin{bmatrix}
+           i_{t} \\
+           f_{t} \\
+           o_{t} \\
+           g_{t}
+         \end{bmatrix}
+= \mathbf{W}_h * h_{t-1} + \mathbf{W}_x * x_t + b
+       \end{equation}
+
+<p>
+Here \[i_t, f_t, o_t, g_t\] represents input, forget, ouput and update gate. 
+The ConvLSTM takes at any time step is given 3 inputs, convolution features, vertex at t-1, vertex at t-2. We only need to give the 2 previous verticies in order 
+to uniquely determine a the next vertex eg, again image a square, if we are given any points of the square we can easily find the orientation(clockwise or anti-clokwise)
+of the 3 point. Hence we need only 2 verticies to determine the 3rd. <i>* Here the authors comments are all valid on the ground truth polyon. Don't think in terms of 
+prediction here*</i>. 
+</p>
+
+<p>
+The output of the RNN at each step is D*D one hot vector. The D represents the grid size of the prediction space./* Image the input image scaled down to D*D and we 
+predict if a vertex exists or not at each pixel */. Having a staring vertex will help the rnn in knowning when to stop, since it has closed the loop.
+</p>
+
+<p>
+We have still not discussed how does the RNN find the starting point. The authors use another auxillary network which consits of 2 mlp layers of D*D dimension.
+Where layer one(Object Boundary Layer) predicts if each pixel is boundary or not. The Object Boundary layer takes the features of CNN as input. The other layer
+predicts vertecies of the object. It takes as input the object features from the convolutional network and also the boundary predictions from the object boundary
+layer. It ouput D*D one hot vector of verticies. /* I still do not undertand how this can be used to input the starting vertex. My guess is they choose any vertex
+as the starting vertex which makes sense, since in a closed polygon any vertex could be thought of as the starting vertex. I think this layer is used for properly
+training the RNN network.*/
+</p>
+</div>
+</li>
+<li><a id="orgc70a81b"></a>Training:<br />
+<div class="outline-text-6" id="text-3-0-3-0-3">
+<p>
+The network is trained using adam with \[\beta_1 =0.9\] and \[\beta_2=0.99\]. The intial lerning rate of \[1e-4\] is used which is decayed by 10 every 10 epochs.
+A important trick the paper uses is target smoothing wherein nearby pixels of an ground truth(gt) vertex are also assigned non-zero probabilities, this helps network
+get positive feedback when it misses the vertex slightly./* This is okay for small sized images. But as the size of the input image is large, we down scale to D*D for 
+prediction, close pixels in this dimension might not be actually be close to the vertex in the original image. The other things is that it is bad when the image is crowded*/
+</p>
+</div>
+</li>
+<li><a id="orgb8e328c"></a>The paper also uses teacher forcing a standard technique in training RNN's<br /></li>
+<li><a id="orgae4157d"></a>Data aumentation:<br />
+<div class="outline-text-6" id="text-3-0-3-0-5">
+<p>
+The paper uses the standard Random Flip, Enlarging the box, Randomly Selecting the start vertex
+</p>
+</div>
+</li>
+<li><a id="org5613af7"></a>Results<br />
+<div class="outline-text-6" id="text-3-0-3-0-6">
+<p>
+The results on Cityscapes Dataset are pretty intresting. The cityspace dataset consists of real world images from the cities in Germany. The dataset is
+not the large also, it only containes around 2975 training and 500 validation images. There are 8 object categories namely Person, Rider, Car, Truck, Bus,
+train, motorbike and bike. Though the distribution of the classes is highly skewed with ratio of maximum number of instances to minimum number of instances 
+equal to 183. The average number of verticies for instace segmentation is around 70 and authors set the maximum number of time steps in LSTM model to that.
+<i>* I did not read how the authors evaluated with other methods*</i>
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Bicylcle</th>
+<th scope="col" class="org-left">Bus</th>
+<th scope="col" class="org-right">Person</th>
+<th scope="col" class="org-left">Train</th>
+<th scope="col" class="org-right">Truck</th>
+<th scope="col" class="org-left">Motorcycle</th>
+<th scope="col" class="org-left">Car</th>
+<th scope="col" class="org-left">Rider</th>
+<th scope="col" class="org-left">Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">52.13(+.05)</td>
+<td class="org-left">69.53(-4&#x2026;)</td>
+<td class="org-right">63.94(10)</td>
+<td class="org-left">53.74(~-9)</td>
+<td class="org-right">68.03(+3.03)</td>
+<td class="org-left">52.07(~+1)</td>
+<td class="org-left">71.17(+~6)</td>
+<td class="org-left">56.83(+~4)</td>
+<td class="org-left">61.40(~1.2)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+We can see that on datasets that have really less number of instances the model fails to learn eg Train num of instances(136), Bus(352).
+But in the case of highest class the model has learn't considerably better eg Person. This indicates that the model is itself quite data 
+hungry. 
+</p>
+
+<p>
+Another good results is in the figure 4 of the paper, which is plot between Iou vs Longest Length side. The polygon RNN method performs 
+worse as the length of the side increases/* Maybe this could be attributed to the LSTM training. Since we know LSTM don't rember very long
+sequences (Vanishing Gradients)*/. This fact could also be contributed to less of data too since the longest lengths would be of the train and 
+bus class/* No results are shown in the paper for per class side length*/
+</p>
+
+
+<div class="figure">
+<p><img src="./results.png" alt="results.png" />
+</p>
+</div>
+
+<p>
+There is also, another very intresting result in the paper of using the annotatator in the loop, to see how many clicks are reduced when using 
+the PolygonRNN model with human in loop. I did not look into this part of the paper.
+</p>
+</div>
+</li>
+<li><a id="org4165dc9"></a>Comments<br />
+<ol class="org-ol">
+<li><a id="org83d9308"></a>I would like to see the feature maps of the convenet that was finetuned. The author's claim that CNN finetune to object boundaries and logical it seems that should be case(We are training on sort of the boundary detection task DUH!!!).<br />
+<div class="outline-text-7" id="text-3-0-3-0-7-1">
+<p>
+But i would still like to see the results.
+</p>
+</div>
+</li>
+<li><a id="orgea918af"></a>I also did understand the logic of predicting at 28*28 dimension. Instead of higher dimension.<br /></li>
+
+<li><a id="org17e5a3b"></a>It could be because of the curse of dimensionality.Overall it was a well written paper but, i felt that choosing the intial start vertex could have been better explained. I also like papers were the author's generally give an<br />
+<div class="outline-text-7" id="text-3-0-3-0-7-3">
+<p>
+insight into what they were thinking will coming up with certain choices which was lacking. I also think this paper was made possible by the Cityspace dataset which 
+provided the polygon annotations, I also belive the idea of the paper could have very well started from thinking what could be done with these polygon annotations.
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Singh</p>
+<p class="date">Created: 2019-01-24 Thu 20:57</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
